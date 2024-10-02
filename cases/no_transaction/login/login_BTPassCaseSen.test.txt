@@ -1,0 +1,17 @@
+# Verify that password is case sensitive
+
+# commands to execute:
+create user1 user1 100
+login user1 USER1
+create user2 User2 100
+login user2 uSER2
+quit
+*
+
+# expected output:
+Created user user1
+Login failed 
+Created user user2
+Login failed 
+Goodbye
+*

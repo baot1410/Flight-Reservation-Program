@@ -1,0 +1,21 @@
+# Verify that the balance cannot be negative.
+
+# commands to execute:
+create baot passWORD -2
+quit
+*
+
+# expected output from those commands:
+Failed to create user
+Goodbye
+*
+
+# commands to execute:
+create baot14 pAsSwOrD -300
+quit
+*
+
+# expected output from those commands:
+Failed to create user
+Goodbye
+*

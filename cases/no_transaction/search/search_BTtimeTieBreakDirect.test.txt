@@ -1,0 +1,74 @@
+# Verify the results on total actual_time (ascending). If a tie occurs, break that tie by
+# choosing the smaller fid value; for indirect itineraries, use the first then second fid for
+# tie-breaking.
+
+# user commands:
+search "Washington DC" "Long Beach CA" 0 10 20
+quit
+*
+
+# expected output:
+Itinerary 0: 1 flight(s), 292 minutes
+ID: 76868 Day: 10 Carrier: B6 Number: 305 Origin: Washington DC Dest: Long Beach CA Duration: 292 Capacity: 17 Price: 986
+Itinerary 1: 1 flight(s), 299 minutes
+ID: 76871 Day: 10 Carrier: B6 Number: 311 Origin: Washington DC Dest: Long Beach CA Duration: 299 Capacity: 7 Price: 104
+Itinerary 2: 1 flight(s), 300 minutes
+ID: 76869 Day: 10 Carrier: B6 Number: 306 Origin: Washington DC Dest: Long Beach CA Duration: 300 Capacity: 18 Price: 222
+Itinerary 3: 1 flight(s), 300 minutes
+ID: 76870 Day: 10 Carrier: B6 Number: 308 Origin: Washington DC Dest: Long Beach CA Duration: 300 Capacity: 14 Price: 983
+Itinerary 4: 2 flight(s), 331 minutes
+ID: 240942 Day: 10 Carrier: HP Number: 796 Origin: Washington DC Dest: Las Vegas NV Duration: 274 Capacity: 16 Price: 462
+ID: 76992 Day: 10 Carrier: B6 Number: 285 Origin: Las Vegas NV Dest: Long Beach CA Duration: 57 Capacity: 3 Price: 991
+Itinerary 5: 2 flight(s), 333 minutes
+ID: 240942 Day: 10 Carrier: HP Number: 796 Origin: Washington DC Dest: Las Vegas NV Duration: 274 Capacity: 16 Price: 462
+ID: 76993 Day: 10 Carrier: B6 Number: 287 Origin: Las Vegas NV Dest: Long Beach CA Duration: 59 Capacity: 13 Price: 564
+Itinerary 6: 2 flight(s), 335 minutes
+ID: 240895 Day: 10 Carrier: HP Number: 868 Origin: Washington DC Dest: Las Vegas NV Duration: 278 Capacity: 11 Price: 714
+ID: 76992 Day: 10 Carrier: B6 Number: 285 Origin: Las Vegas NV Dest: Long Beach CA Duration: 57 Capacity: 3 Price: 991
+Itinerary 7: 2 flight(s), 335 minutes
+ID: 498515 Day: 10 Carrier: UA Number: 1475 Origin: Washington DC Dest: Las Vegas NV Duration: 278 Capacity: 18 Price: 332
+ID: 76992 Day: 10 Carrier: B6 Number: 285 Origin: Las Vegas NV Dest: Long Beach CA Duration: 57 Capacity: 3 Price: 991
+Itinerary 8: 2 flight(s), 336 minutes
+ID: 240942 Day: 10 Carrier: HP Number: 796 Origin: Washington DC Dest: Las Vegas NV Duration: 274 Capacity: 16 Price: 462
+ID: 726420 Day: 10 Carrier: B6 Number: 379 Origin: Las Vegas NV Dest: Long Beach CA Duration: 62 Capacity: 11 Price: 859
+Itinerary 9: 2 flight(s), 336 minutes
+ID: 501323 Day: 10 Carrier: UA Number: 1549 Origin: Washington DC Dest: Las Vegas NV Duration: 279 Capacity: 8 Price: 265
+ID: 76992 Day: 10 Carrier: B6 Number: 285 Origin: Las Vegas NV Dest: Long Beach CA Duration: 57 Capacity: 3 Price: 991
+Itinerary 10: 2 flight(s), 337 minutes
+ID: 8206 Day: 10 Carrier: AA Number: 433 Origin: Washington DC Dest: Dallas/Fort Worth TX Duration: 162 Capacity: 3 Price: 727
+ID: 31900 Day: 10 Carrier: AA Number: 1343 Origin: Dallas/Fort Worth TX Dest: Long Beach CA Duration: 175 Capacity: 15 Price: 247
+Itinerary 11: 2 flight(s), 337 minutes
+ID: 240895 Day: 10 Carrier: HP Number: 868 Origin: Washington DC Dest: Las Vegas NV Duration: 278 Capacity: 11 Price: 714
+ID: 76993 Day: 10 Carrier: B6 Number: 287 Origin: Las Vegas NV Dest: Long Beach CA Duration: 59 Capacity: 13 Price: 564
+Itinerary 12: 2 flight(s), 337 minutes
+ID: 240942 Day: 10 Carrier: HP Number: 796 Origin: Washington DC Dest: Las Vegas NV Duration: 274 Capacity: 16 Price: 462
+ID: 726340 Day: 10 Carrier: B6 Number: 211 Origin: Las Vegas NV Dest: Long Beach CA Duration: 63 Capacity: 0 Price: 392
+Itinerary 13: 2 flight(s), 337 minutes
+ID: 240942 Day: 10 Carrier: HP Number: 796 Origin: Washington DC Dest: Las Vegas NV Duration: 274 Capacity: 16 Price: 462
+ID: 726375 Day: 10 Carrier: B6 Number: 279 Origin: Las Vegas NV Dest: Long Beach CA Duration: 63 Capacity: 13 Price: 504
+Itinerary 14: 2 flight(s), 337 minutes
+ID: 498515 Day: 10 Carrier: UA Number: 1475 Origin: Washington DC Dest: Las Vegas NV Duration: 278 Capacity: 18 Price: 332
+ID: 76993 Day: 10 Carrier: B6 Number: 287 Origin: Las Vegas NV Dest: Long Beach CA Duration: 59 Capacity: 13 Price: 564
+Itinerary 15: 2 flight(s), 338 minutes
+ID: 240942 Day: 10 Carrier: HP Number: 796 Origin: Washington DC Dest: Las Vegas NV Duration: 274 Capacity: 16 Price: 462
+ID: 76991 Day: 10 Carrier: B6 Number: 193 Origin: Las Vegas NV Dest: Long Beach CA Duration: 64 Capacity: 17 Price: 699
+Itinerary 16: 2 flight(s), 338 minutes
+ID: 240942 Day: 10 Carrier: HP Number: 796 Origin: Washington DC Dest: Las Vegas NV Duration: 274 Capacity: 16 Price: 462
+ID: 726653 Day: 10 Carrier: B6 Number: 879 Origin: Las Vegas NV Dest: Long Beach CA Duration: 64 Capacity: 14 Price: 568
+Itinerary 17: 2 flight(s), 338 minutes
+ID: 501323 Day: 10 Carrier: UA Number: 1549 Origin: Washington DC Dest: Las Vegas NV Duration: 279 Capacity: 8 Price: 265
+ID: 76993 Day: 10 Carrier: B6 Number: 287 Origin: Las Vegas NV Dest: Long Beach CA Duration: 59 Capacity: 13 Price: 564
+Itinerary 18: 2 flight(s), 339 minutes
+ID: 8206 Day: 10 Carrier: AA Number: 433 Origin: Washington DC Dest: Dallas/Fort Worth TX Duration: 162 Capacity: 3 Price: 727
+ID: 14400 Day: 10 Carrier: AA Number: 617 Origin: Dallas/Fort Worth TX Dest: Long Beach CA Duration: 177 Capacity: 14 Price: 536
+Itinerary 19: 2 flight(s), 339 minutes
+ID: 113031 Day: 10 Carrier: DH Number: 11 Origin: Washington DC Dest: Las Vegas NV Duration: 282 Capacity: 12 Price: 906
+ID: 76992 Day: 10 Carrier: B6 Number: 285 Origin: Las Vegas NV Dest: Long Beach CA Duration: 57 Capacity: 3 Price: 991
+Goodbye
+*
+
+
+
+
+
+

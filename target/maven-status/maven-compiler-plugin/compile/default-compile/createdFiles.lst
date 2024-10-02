@@ -1,0 +1,6 @@
+flightapp/Query.class
+flightapp/Query$Flight.class
+flightapp/PasswordUtils.class
+flightapp/FlightService.class
+flightapp/QueryAbstract.class
+flightapp/DBConnUtils.class
